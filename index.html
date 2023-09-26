@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizzeria</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/0e49f49bd7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@700&family=Playfair+Display&display=swap" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />  
+</head>
+  <body>
+    <header> <!--class en nav-->
+      <input type="checkbox" id="toggle-menu" />
+      <label for="toggle-menu" class="menu-hamburguesa">
+        <i class="fa-solid fa-bars" id="iconoMenu"></i>
+      </label>
+        <nav class="navegacion"> <!--id en ul-->
+
+            <ul class="listaSinEstilo" id="menu">
+                <li>
+                    <a href="#laPizza">Nuestra Especialidad</a>
+                </li>
+                <li>
+                    <a href="#sobreNosotros">Quienes somos</a>
+                </li>
+                <li>
+                    <a href="#acompanamientos">Sugerencias</a>
+                </li>
+                <li>
+                    <a href="#ubicacion">Visitanos</a>
+                </li>
+            </ul>
+        </nav>
+<!--div con id y nuevo h2, con animate.css -->
+        <div id="hero">
+      <h1 class="animate__animated animate__bounce">Pizzeria</h1>
+      <h2>Tu mejor lugar</h2>
+        </div>
+
+
+    </header>
+    <main>
+      <section id="laPizza">
+        <h2>Un clasico italiano</h2>
+        <p class="introductorio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sapiente accusamus soluta minus vero nostrum nemo? Enim aperiam repudiandae et ipsa, nemo aut omnis, minima, alias similique quisquam iure dicta.
+        In facilis corrupti iste sed, non maxime aspernatur corporis ipsam unde neque. Voluptates a totam, delectus id accusamus, ab reprehenderit necessitatibus ratione ipsam commodi molestiae, officiis esse quibusdam fuga iure.
+        Minima totam, veritatis beatae, aut saepe hic sunt unde aperiam amet sapiente aliquam blanditiis, quisquam sed ut quaerat officia tempore vitae! Libero eligendi ea consectetur, voluptates illum enim voluptatem dignissimos?
+        Tenetur debitis autem, quasi necessitatibus corporis qui dolores cum aliquam ut omnis ratione error animi soluta iste totam corrupti vel doloribus aliquid! Accusamus culpa nesciunt dolor, doloremque earum dolores placeat!
+        Incidunt ducimus non, hic eveniet facere inventore accusamus ad quasi voluptate laudantium voluptatum corporis voluptas dolor ea repellat facilis eius doloremque aperiam blanditiis adipisci nulla quaerat? Nemo saepe possimus maxime.</p>
+        <img id="pizza" src="media/pizza.jpeg" alt="pizza napolitana" style="clip-path: inset(30px 20px 20px 30px round 50px 0 0 50px);"/>
+      </section>
+      <section id="sobreNosotros">
+        <h2 class="introductorio">Quienes somos</h2>
+        <p class="introductorio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio deleniti, aliquid pariatur perferendis reprehenderit provident consequatur nesciunt laborum eius sunt hic sint vero, assumenda repellat! Voluptatem rerum modi praesentium aperiam?
+        Error fugit libero amet porro. Reiciendis sed laudantium earum non aliquid, aut optio quas id, vel temporibus magni doloribus, commodi distinctio eos autem quaerat repellat minus perspiciatis impedit. Laudantium, natus.
+        Tempore, eum. Dignissimos ex repudiandae consequuntur adipisci laboriosam error officia fugit, delectus praesentium impedit ad tempora repellendus! Fuga sint est voluptatum voluptas obcaecati? Obcaecati voluptates dignissimos sequi consequatur dolores amet?
+        Voluptate commodi unde voluptatem ipsa soluta dicta placeat quo nulla corporis debitis tempore sed voluptatum odio minima optio fugiat nostrum enim, aut provident harum. Ipsa, dolorem maiores? A, maiores earum.
+        Repellendus rem adipisci <span id="nombreDueño">creado por Julieta Lopez</span> commodi tenetur deserunt repudiandae. Explicabo molestiae tenetur exercitationem! Praesentium vitae soluta quae, repudiandae, placeat doloribus odio deserunt labore consectetur, consequatur voluptatem numquam delectus?
+        Neque eius iste magni quam vel dolores fugiat voluptatibus labore corrupti omnis id voluptatum nostrum temporibus similique nesciunt beatae pariatur, repudiandae, delectus repellat, a cum possimus. Asperiores quam voluptates sunt!
+        Iste eveniet repellat sit rerum beatae totam possimus distinctio aut quidem id debitis quisquam sapiente dolorem dicta numquam nemo, reiciendis tempora quas inventore neque voluptates, nam labore quae fuga. Modi.
+        Quae sunt illo animi perspiciatis tempore officiis magnam non in eveniet, corrupti fugit atque velit dicta placeat ad enim quod quia, est similique iste reprehenderit deleniti voluptatibus ipsam. Similique, voluptatum?
+        Reprehenderit perspiciatis aliquam aut nostrum iusto laboriosam voluptatibus quam incidunt, itaque possimus nulla, eius unde dolore, corrupti veritatis ex distinctio id laborum aliquid earum consequuntur? Laborum est ea quia pariatur?
+        Minima laboriosam possimus rem, temporibus aliquam eos debitis iure repudiandae rerum nemo autem velit maiores dolorum illum quisquam quod vitae. Perspiciatis exercitationem, nostrum nihil quos non totam mollitia adipisci vel.</p>
+      </section>
+
+      
+      <section id="acompanamientos">
+        <h2>Sugerencias</h2>
+        <table >
+          <caption>
+            Acompañamientos
+          </caption>
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Calorias</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Cerveza</td>
+              <td>10.99</td>
+            </tr>
+            <tr>
+              <td>Vino</td>
+              <td>12.99</td>
+            </tr>
+            <tr>
+              <td>Papas fritas</td>
+              <td>11.99</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>Total</td>
+              <td>39.57</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+      
+      <section id="ubicacion">
+        <h2>Nuestra ubicacion</h2>
+        <div id="mapa">
+          <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106129.6202381845!2d-69.1424465113972!3d-33.772276218996275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbdbee39c401f9623%3A0x7d410f238982a9fa!2sRN40%2C%20Tunuy%C3%A1n%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1689896391650!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A voluptatem veniam dolorum reiciendis quis facere id! Natus vitae in eveniet sit exercitationem accusamus quos voluptate, perspiciatis et earum numquam repellat!
+          Dolorum est quam error earum eveniet, esse iure architecto quaerat pariatur optio harum nemo corporis molestiae voluptate ullam, aperiam delectus eaque vitae praesentium et aliquam accusamus perspiciatis illo atque? Blanditiis?
+          Quaerat, error eum esse eligendi odio reiciendis animi perferendis dolorum libero, similique magni delectus nesciunt quis asperiores ducimus deserunt numquam iste expedita vero. Quaerat nostrum quis vitae non, mollitia qui.
+          Eaque a inventore suscipit distinctio ad eligendi quae ab blanditiis, id consequuntur dolore corporis maxime aliquam excepturi aspernatur dolorum, voluptatum rerum deserunt? Cum repellendus, molestiae magnam eaque obcaecati commodi dolores!
+          Omnis corporis nam, nesciunt dignissimos magni fuga tempora animi, laudantium officia incidunt cum libero perferendis, non nostrum vel aliquid aspernatur alias nisi veniam ipsum deserunt ab magnam quos. Esse, saepe!
+          Suscipit id ab est quod consequatur? Alias delectus saepe repudiandae asperiores, iusto, accusantium dolor aliquam aperiam voluptas mollitia quas! Animi, maiores magnam suscipit blanditiis vitae minima neque veritatis ea ullam.
+</p>
+        </div>
+        
+      
+      </section>
+
+
+    </main><!--class para footer-->
+    <footer class="navegacion">
+      <p>Nuestras redes sociales</p>
+      <!--aplicamos animate.css y wow.js-->
+      <ul class="listaSinEstilo wow animate__animated animate__fadeInDown animate__delay-1s" id="contactos">
+        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-facebook"></a></i></li>
+      </ul>
+    </footer>
+
+    <!--wow.js-->
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+  </body>
+</html>

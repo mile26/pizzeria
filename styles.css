@@ -1,0 +1,195 @@
+:root {
+  /*custom property*/
+  /*paleta de colores*/
+  --color-1: rgb(162, 59, 162); /*h1 #nombreDueño*/
+  --color-table-1: rgb(222, 144, 42); /*fondo tabla*/
+  --color-table-2: rgb(191, 71, 28); /*celdas tabla*/
+  --color-main: rgba(240, 255, 255, 0.56); /*fondo del contenido principal*/
+
+  /*imagenes a reemplazar*/
+  --background-page: url(media/fondomesa.jpg);
+
+  /*fuentes*/
+  --fuente-1: "Edu NSW ACT Foundation", cursive;
+  --fuente-2: "Playfair Display", serif;
+
+  /*tamaño fuentes*/
+  --font-size-predeterminada: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--fuente-2);
+  font-size: var(--font-size-predeterminada);
+}
+
+body {
+  background: var(--background-page) no-repeat center fixed;
+  background-size: cover;
+  /*flexbox*/
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/*vista celular*/
+
+/*flexbox*/
+header {
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: white; /*custom property?*/
+}
+
+/*flexbox*/
+
+/* Estilos para el menú hamburguesa */
+.menu-hamburguesa {
+  display: block;
+  cursor: pointer;
+}
+
+#iconoMenu {
+  padding: 2%;
+  font-size: 10vw;
+  display: flex;
+  
+  background-color: rgba(0, 0, 0, 0.922);
+}
+
+/* Ocultar el input checkbox */
+#toggle-menu {
+  display: none;
+}
+
+/* Estilos para mostrar el menú cuando el checkbox está marcado */
+#toggle-menu:checked ~ .navegacion #menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#menu {
+  display: none;
+}
+
+.navegacion {
+  text-align: center;
+  color: #ffffff; /*custom property?*/
+  background-color: rgba(0, 0, 0, 0.922); /*custom property?*/
+}
+/*
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.922); custom property?
+    color: white; custom property?
+*/
+
+#menu li {
+  padding: 2%;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.766); /*custom property?*/
+  flex-grow: 1; /*este elemento crecera y ocupara todo el espacio que sobraba*/
+}
+
+#contactos {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+}
+
+main {
+  background-color: var(--color-main);
+}
+
+section {
+  border-bottom: 2px solid var(--color-1);
+  padding: 5%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  text-align: justify;
+  min-height: 100vh;
+}
+
+h1,
+#nombreDueño {
+  font-family: var(--fuente-1);
+  color: var(--color-1);
+}
+
+h1 {
+  /*font-size: 10em; OJO!! con em toma el valor del padre*/
+  font-size: 12vw;
+}
+
+h2 {
+  text-align: center;
+}
+
+table {
+  background-color: var(--color-table-1);
+}
+
+td {
+  background-color: var(--color-table-2);
+}
+
+#pizza {
+  width: 40vw;
+}
+
+.listaSinEstilo {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: var(--color-1);
+}
+
+footer {
+  height: 15vh;
+}
+
+/*vista escritorio*/
+@media screen and (min-width: 1024px) {
+  #menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  #iconoMenu {
+    display: none;
+  }
+
+  #mapa {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
